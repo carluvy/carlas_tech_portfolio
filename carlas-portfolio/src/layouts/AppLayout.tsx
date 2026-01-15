@@ -4,7 +4,7 @@ import { Footer } from "@/components/ui/Footer";
 
 export function AppLayout() {
     return (
-        <div className="flex flex-col min-h-screen bg-background text-foreground">
+        <div className="flex flex-col min-h-screen bg-background text-foreground transition-colors">
             <Header />
       <main className="flex-1 container mx-auto px-4 py-8">
         <Outlet />
