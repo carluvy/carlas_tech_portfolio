@@ -7,7 +7,9 @@ import type { Project } from "@/types";
       "A full-stack expense tracking app with JWT authentication, offline-first storage, and financial insights.",
     tags: ["Kotlin", "Jetpack Compose", "Room", "Django"],
     featured: true,
-    content: "....."
+    content: ".....",
+    public: false
+
   },
 
     {
@@ -17,7 +19,8 @@ import type { Project } from "@/types";
       "A collaborative shopping list app with friend invites, consent-based sharing, and real-time sync.",
     tags: ["Jetpack Compose", "Room", "Paging 3", "Supabase"],
     featured: true,
-    content: "...."
+    content: "....",
+    public: false,
   },
 
   {
@@ -26,7 +29,8 @@ import type { Project } from "@/types";
     summary:
       "A local-first tool for extracting structured data from PDFs for analysis and reporting.",
     tags: ["Python", "Pandas", "Data Processing"],
-    content: "..."
+    content: "...",
+    public: false,
   },
 ]
 
