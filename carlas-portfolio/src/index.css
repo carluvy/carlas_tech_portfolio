@@ -261,6 +261,19 @@
     border-radius: 0.375rem;
     font-weight: 500;
   }
+
+  figure {
+  @apply my-12 rounded-xl border bg-card p-4 shadow-sm transition;
+}
+
+figure img {
+  @apply rounded-lg w-full;
+}
+
+figure figcaption {
+  @apply mt-3 text-sm text-muted-foreground text-center;
+}
+
 }
 
 

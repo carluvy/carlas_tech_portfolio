@@ -31,14 +31,15 @@ export default function AboutPage() {
             </Section>
             {/* </section> */}
             <Section>
+                <div className="h-px bg-border mx-auto max-w-5xl"/>
+                <ProjectsPreview />
+            </Section>
+            <Section>
                 <div className="h-px bg-border mx-auto max-w-5xl" />
 
             <SkillsGrid /> 
             </Section>
-            <Section>
-                <div className="h-px bg-border mx-auto max-w-5xl"/>
-                <ProjectsPreview />
-            </Section>
+            
         </main>
     )
 }

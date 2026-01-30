@@ -2,7 +2,7 @@ import type { Project } from "@/types"
 import { Link } from "react-router-dom"
 
 type Props = {
-  project: Pick<Project, "slug" | "title" | "summary" | "tags">
+  project: Pick<Project, "slug" | "title" | "summary" | "tags" | "cover">
 }
 
 export function ProjectCard({project}: Props) {
@@ -13,6 +13,20 @@ export function ProjectCard({project}: Props) {
         group relative rounded-2xl border bg-card
         transition-all duration-300
         hover:-translate-y-1 hover:shadow-xl">
+
+             {/* Image */}
+      {project.cover && (
+        <div className="relative h-44 overflow-hidden">
+          <img
+            src={project.cover}
+            alt={`${project.title} preview`}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+
+          {/* Subtle overlay */}
+          <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent" />
+        </div>
+      )}
 
             <div
             aria-hidden

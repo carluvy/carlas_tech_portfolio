@@ -7,7 +7,8 @@ tags:
 - Room
 - Django
 content: "..."
-featured: "no"
+featured: false
+public: true
 
 ---
 # Project

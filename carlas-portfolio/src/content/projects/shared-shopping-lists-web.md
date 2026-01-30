@@ -16,8 +16,9 @@ screenshots:
 - "/projects/shared-lists-web/share-dialog.png"
 - "/projects/shared-lists-web/delete-list-dialog.png"
 
-repo: "private"
-featured: "yes"
+public: true
+featured: true
+cover: "/projects/shared-lists-web/dashboard.png"
 ---
 
 ## The Problem

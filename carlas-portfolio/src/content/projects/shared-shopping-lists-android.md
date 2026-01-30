@@ -9,11 +9,13 @@ tags:
 - Paging 3
 content: "An offline-first Android shopping list app with secure sharing and local persistence."
 screenshots:
-- "/projects/shared-lists-web/dashboard.png"
+- "/projects/shared-lists-android/dashboard.jpeg"
 - "/projects/shared-lists-web/list-detail.png"
 - "/projects/shared-lists-web/share-dialog.png"
-repo: "private"
-featured: "yes"
+
+featured: true
+public: true
+cover: "/projects/shared-lists-android/dashboard1.jpeg"
 ---
 
 ## The Problem

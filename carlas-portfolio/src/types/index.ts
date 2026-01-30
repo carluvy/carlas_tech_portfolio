@@ -8,5 +8,8 @@ export interface Project {
     thumbnail?: string,
     content: string,
     screenshots?: string[],
-    repo?: "private" | "public"
+    repo?: string,
+    public: boolean,
+    article?: string,
+    cover?: string
 }

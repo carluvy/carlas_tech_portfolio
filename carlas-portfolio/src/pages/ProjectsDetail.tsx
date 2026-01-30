@@ -65,6 +65,32 @@ export default function ProjectDetailPage() {
                             </li>
                         ))}
                     </ul>
+
+                    {project.public && (
+  <div className="flex flex-wrap gap-4 pt-4 justify-center">
+    {project.repo && (
+      <a
+        href={project.repo}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+      >
+        GitHub Repository
+      </a>
+    ) }
+
+     {project.article && (
+      <a
+        href={project.article}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+      >
+        Medium Article
+      </a>
+    )}
+  </div>
+)}
                 </header>
             </section>
             </Section>

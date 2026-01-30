@@ -28,6 +28,9 @@ import { getAllProjects } from "@/lib/projectContent";
 
 export function ProjectsPreview() {
     const [ projects, setProjects ] = useState<Project[]>([])
+    const featuredProjects = projects.filter(p => p.featured)
+
+
 
     useEffect(() => {
         getAllProjects().then(setProjects);
@@ -55,14 +58,17 @@ export function ProjectsPreview() {
                 </Link>
             </div> 
 
-            <div className="grid gap-6 md:grid-cols-3">
-                {projects.slice(0,4).map(project => (
+            <div className="grid gap-6 md:grid-cols-3 ">
+                {/* <div className="grid gap-6 md:grid-cols-3 ring-1 ring-primary/40 shadow-lg bg-linear-to-br from-primary/5 to-transparent"> */}
+                {featuredProjects.map(project => (
                     <ProjectCard
                     // <Link
                     key={project.slug}
                     project={project}
                     // compact
+                    
                     />
+                    
                 ))}
                     {/* // to={`/projects/${project.slug}`}
                     // className="

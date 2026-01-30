@@ -32,7 +32,10 @@ export async function getAllProjects(): Promise<Project[]> {
         content: string
         thumbnail: string
         screenshots: string[]
-        repo?: "private" | "public"
+        repo?: string
+        public: boolean
+        article?: string
+        cover?: string
       }>(raw)
         // const { data, content } = matter(raw);
         // console.log("Data", parsed)
@@ -47,7 +50,10 @@ export async function getAllProjects(): Promise<Project[]> {
             featured: parsed.attributes.featured,
             content: parsed.attributes.content,
             repo: parsed.attributes.repo,
-            screenshots: parsed.attributes.screenshots ?? []
+            screenshots: parsed.attributes.screenshots ?? [],
+            public:parsed.attributes.public,
+            article:parsed.attributes.article,
+            cover:parsed.attributes.cover,
 
 
         } satisfies Project
@@ -82,6 +88,10 @@ export async function getProject(slug: string): Promise<Project | null> {
         content: string
         screenshots: string[]
         thumbnail: string
+        repo?: string
+        article?: string
+        public: boolean
+        cover?: string
       }>(raw)
 //   const { data, content } = matter(raw)
 
@@ -93,7 +103,11 @@ export async function getProject(slug: string): Promise<Project | null> {
     featured: parsed.attributes.featured,
     content: parsed.body,
     screenshots: parsed.attributes.screenshots,
-    thumbnail: parsed.attributes.thumbnail
+    thumbnail: parsed.attributes.thumbnail,
+    repo: parsed.attributes.repo,
+    public: parsed.attributes.public,
+    article: parsed.attributes.article,
+    cover: parsed.attributes.cover
   }
 }
 
