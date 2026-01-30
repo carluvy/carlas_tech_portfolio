@@ -4,6 +4,7 @@ import { captionFromSrc } from "@/lib/utils";
 import type { Project } from "@/types";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Section } from "@/components/ui/SectionWrapper"
 
 
 export default function ProjectDetailPage() {
@@ -37,6 +38,7 @@ export default function ProjectDetailPage() {
 
     return (
         <main className="space-y-24">
+            <Section>
             <section className="py-24 flex justify-center">
                 <header className="space-y-6 max-w-3xl text-center">
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
@@ -65,7 +67,10 @@ export default function ProjectDetailPage() {
                     </ul>
                 </header>
             </section>
+            </Section>
             <div className="h-px bg-border max-w-5xl mx-auto" />
+
+            <Section>
 
 
             <section className="flex justify-center">
@@ -80,7 +85,12 @@ export default function ProjectDetailPage() {
 
                 {/* <ProjectContent markdown={""} /> */}
             </section>
+            </Section>
+            {/* <Section children={} */}
+           
             <div className="h-px bg-border max-w-5xl mx-auto" />
+
+            <Section>
 
 
             {screenshots.length > 0 && (
@@ -117,6 +127,7 @@ export default function ProjectDetailPage() {
 
                 </section>
             )}
+            </Section>
 
 
         </main>

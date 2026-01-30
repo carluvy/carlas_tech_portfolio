@@ -3,16 +3,17 @@ import { AboutBio } from "../components/about/AboutBio";
 import { AboutHero } from "../components/about/AboutHero";
 import { SkillsGrid } from "../components/about/SkillsGrid";
 import { ProjectsPreview } from "@/components/about/ProjectsPreview";
+import { Section } from "@/components/ui/SectionWrapper";
 
 export default function AboutPage() {
 
-    function Section({ children }: { children: React.ReactNode }) {
-  return (
-    <section className="mx-auto max-w-6xl px-4">
-      {children}
-    </section>
-  )
-}
+//     function Section({ children }: { children: React.ReactNode }) {
+//   return (
+//     <section className="mx-auto max-w-6xl px-4">
+//       {children}
+//     </section>
+//   )
+// }
     return (
         <main className="space-y-24">
             <Section>
