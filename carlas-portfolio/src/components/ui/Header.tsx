@@ -23,8 +23,8 @@ export function Header() {
               ? "bg-background/80 shadow-lg border-b"
               : "bg-transparent border-transparent"}
               `}>
-            <div className="container mx-auto flex justify-between items-center px-6 py-4">
-              <ThemeToggle/>
+            <div className="container mx-auto flex justify-between items-center px-4 py-3 sm:py-4">
+              {/* <ThemeToggle/> */}
 
               {/* Brand */}
               <Link to="/" className="flex items-baseline gap-2 group">
@@ -37,7 +37,8 @@ export function Header() {
               </Link>
 
               {/* Navigation */}
-              <nav className="flex gap-6">
+              <nav className="flex items-center gap-4">
+                {/* <ThemeToggle /> */}
                 <NavItem to="/about">About</NavItem>
                 <NavItem to="/projects">Projects</NavItem>
                 <NavItem to="/contact">Contact</NavItem>
@@ -68,7 +69,7 @@ export function Header() {
               /> */}
             {/* </NavLink> */}
           {/* ))} */} 
-          {/* <ThemeToggle /> */}
+          <ThemeToggle />
         </nav>
             {/* <Link to="/about" className="text-muted-foreground hover:text-primary transition">
             About
