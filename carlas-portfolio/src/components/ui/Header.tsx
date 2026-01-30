@@ -24,7 +24,7 @@ export function Header() {
               : "bg-transparent border-transparent"}
               `}>
             <div className="container mx-auto flex justify-between items-center px-6 py-4">
-              {/* <ThemeToggle/> */}
+              <ThemeToggle/>
 
               {/* Brand */}
               <Link to="/" className="flex items-baseline gap-2 group">
@@ -68,7 +68,7 @@ export function Header() {
               /> */}
             {/* </NavLink> */}
           {/* ))} */} 
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </nav>
             {/* <Link to="/about" className="text-muted-foreground hover:text-primary transition">
             About
