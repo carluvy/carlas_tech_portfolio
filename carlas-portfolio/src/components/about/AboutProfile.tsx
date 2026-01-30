@@ -1,6 +1,6 @@
 export function AboutProfile() {
   return (
-    <section className="py-16 flex justify-center">
+    <section className="py-16 flex justify-center space-y-8">
     {/* // <section className="container mx-auto px-4 py-24"> */}
     {/* <div className="container mx-auto px-4"> */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center max-w-5xl px-4">
@@ -15,11 +15,11 @@ export function AboutProfile() {
           />
 
           {/* Image frame */}
-          <div className="relative rounded-3xl border bg-card p-2 shadow-xl">
+          <div className="relative rounded-2xl border bg-card p-2 shadow-xl glow">
             <img
-              src="/profile.jpg" // replace when ready
+              src="/profile/profile.jpeg" // replace when ready
               alt="Carla Aluvai"
-              className="h-[360px] w-[360px] object-cover rounded-2xl
+              className="h-90 w-90 object-cover rounded-2xl
                          transition-transform duration-500
                          hover:scale-[1.02]"
             />
@@ -45,14 +45,41 @@ export function AboutProfile() {
           </p>
 
           {/* Callouts */}
-          <div className="grid grid-cols-2 gap-4 pt-4">
-            <div className="rounded-xl border bg-card p-4">
-              <p className="text-sm text-muted-foreground">Focus</p>
-              <p className="font-medium">User-first systems</p>
+          <div className="
+          grid 
+          grid-cols-2 
+          gap-4 pt-4
+         ">
+            <div className="
+            rounded-2xl 
+            border 
+            bg-card 
+            p-4
+            transition-all
+            hover:bg-(--card-hover)
+            text-card-foreground
+            duration-300
+            dark:hover:bg-(--card-hover-dark)
+            hover:translate-y-1
+            glow
+            ">
+              <p className="text-sm text-muted-foreground leading-relaxed">Focus</p>
+              <p className="font-semibold tracking-tight">User-first systems</p>
             </div>
-            <div className="rounded-xl border bg-card p-4">
-              <p className="text-sm text-muted-foreground">Style</p>
-              <p className="font-medium">Clean & scalable</p>
+            <div className="
+            rounded-2xl 
+            border 
+            bg-card 
+            p-4 
+            transition-all
+            hover:bg-(--card-hover)
+            text-card-foreground
+            duration-300
+            dark:hover:bg-(--card-hover-dark)
+            hover:translate-y-1
+            glow">
+              <p className="text-sm text-muted-foreground leading-relaxed">Style</p>
+              <p className="font-semibold tracking-tight">Clean & scalable</p>
             </div>
           </div>
         </div>

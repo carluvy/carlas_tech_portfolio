@@ -10,6 +10,15 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
     tailwindcss(),
+
+    // {
+    //   name: 'markdown-loader',
+    //   transform(code, id) {
+    //     if (id.slice(-3) === '.md') {
+    //       return `export default ${JSON.stringify(code)};`
+    //     }
+    //   },
+    // },
   ]
   // .filter(Boolean),
   // resolve: {

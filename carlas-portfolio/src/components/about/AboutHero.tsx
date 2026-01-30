@@ -4,7 +4,7 @@ export function AboutHero() {
             {/* Backgorund glow */}
             <div aria-hidden
             className="absolute inset-0 -z-10 flex justify-center">
-                <div className="h-[400px] w-[400px] rounded-full bg-primary/20 blur-3xl"/>
+                <div className="h-100 w-100 rounded-full bg-primary/20 blur-3xl"/>
             </div>
             {/* <div className="container mx-auto px-4"> */}
                 <div className="max-w-5xl px-4 text-center space-y-6">
