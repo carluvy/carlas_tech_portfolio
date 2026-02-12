@@ -75,7 +75,7 @@ export default function ProjectDetailPage() {
         rel="noreferrer"
         className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
       >
-        GitHub Repository
+        Repository
       </a>
     ) }
 
@@ -87,6 +87,17 @@ export default function ProjectDetailPage() {
         className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
       >
         Medium Article
+      </a>
+    )}
+
+       {project.domain && (
+      <a
+        href={project.domain}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+      >
+        Website
       </a>
     )}
   </div>

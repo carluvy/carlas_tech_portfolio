@@ -1,7 +1,6 @@
 // import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppLayout } from "./layouts/AppLayout";
-import AboutPage from "./pages/About";
 import ProjectsPage from "./pages/Projects";
 import ProjectDetailPage from "./pages/ProjectsDetail";
 import HomePage from "./pages/Home";
