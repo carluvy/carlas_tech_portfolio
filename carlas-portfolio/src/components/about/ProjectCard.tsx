@@ -45,7 +45,7 @@ export function ProjectCard({project}: Props) {
             "
             >
                 {project.summary}
-                {project.tags}
+                {/* {project.tags} */}
             </p>
 
             <div className="mt-4 flex flex-wrap gap-2 pt-2">

@@ -1,7 +1,7 @@
 import { Navigate, useLocation } from "react-router-dom"
 import App from "../App";
 import Home from "./Home";
-import AboutPage from "./About";
+import HomePage from "./Home";
 
 const Index: React.FC = () => {
     const location = useLocation();
@@ -13,11 +13,11 @@ const Index: React.FC = () => {
 
     const renderPage = () => {
         if (location.pathname === '/home') {
-            return <Home/>;
+            return <HomePage/>;
         }
-        if (location.pathname ==='/about') {
-            return <AboutPage/>;
-        }
+        // if (location.pathname ==='/about') {
+        //     return <HomePage/>;
+        // }
 
         // if (location.pathname === '/skills') {
         //     return <Skills/>;

@@ -19,7 +19,7 @@ screenshots:
 
 repo: "https://github.com/carluvy/We_rate_dogs-udacity"
 public: true
-featured: true
+featured: false
 article: "https://medium.com/@carngie/data-wrangling-weratedogs-tweets-389d405cde9c"
 cover: "/projects/we-rate-dogs/retweet-vs-favorite.png"
 ---

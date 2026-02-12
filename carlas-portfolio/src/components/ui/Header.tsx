@@ -39,7 +39,7 @@ export function Header() {
               {/* Navigation */}
               <nav className="flex items-center gap-4">
                 {/* <ThemeToggle /> */}
-                <NavItem to="/about">About</NavItem>
+                <NavItem to="/">Home</NavItem>
                 <NavItem to="/projects">Projects</NavItem>
                 <NavItem to="/contact">Contact</NavItem>
           {/* {[

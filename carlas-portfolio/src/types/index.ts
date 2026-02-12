@@ -11,5 +11,6 @@ export interface Project {
     repo?: string,
     public: boolean,
     article?: string,
-    cover?: string
+    cover?: string,
+    domain?: string,
 }

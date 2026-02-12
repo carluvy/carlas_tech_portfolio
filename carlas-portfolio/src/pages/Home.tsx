@@ -1,40 +1,45 @@
-import ReactMarkdown from "react-markdown";
-import HomeScreen from "../components/HomeScreen";
-const markdownText = `
---- 
+import { AboutBio } from "@/components/about/AboutBio";
+import { AboutHero } from "@/components/about/AboutHero";
+import { AboutProfile } from "@/components/about/AboutProfile";
+import { ProjectsPreview } from "@/components/about/ProjectsPreview";
+import { SkillsGrid } from "@/components/about/SkillsGrid";
+import { Section } from "@/components/ui/SectionWrapper";
 
-**React Markdown Example**
----
+export default function HomePage() {
 
-- Some text
-- Some other text
-
-## Subtitle
-
-### Additional info
-
-This is a [link](https://github.com/remarkjs/react-markdown)
-`;
-const Home: React.FC = () => {
-
-
+//     function Section({ children }: { children: React.ReactNode }) {
+//   return (
+//     <section className="mx-auto max-w-6xl px-4">
+//       {children}
+//     </section>
+//   )
+// }
     return (
-          
-        <div className="min-h-full">
-            <HomeScreen/>
+        <main className="space-y-24">
+            <Section>
+            <AboutHero />
+            {/* <div className="h-px bg-border mx-auto max-w-5xl"/> */}
+            </Section>
+              <div className="h-px bg-border mx-auto max-w-5xl"/>
+            <Section>
+            <AboutProfile />
+            </Section>
 
-             <section className="flex justify-center">
-                <article className="prose max-w-none">
-  <ReactMarkdown>{markdownText}</ReactMarkdown>
-</article>
-                
-                </section>
+            {/* <section className="container mx-auto px-4"> */}
+            <Section>
+            <AboutBio />
+            </Section>
+            {/* </section> */}
+            <Section>
+                <div className="h-px bg-border mx-auto max-w-5xl"/>
+                <ProjectsPreview />
+            </Section>
+            <Section>
+                <div className="h-px bg-border mx-auto max-w-5xl" />
 
-         
-
-        </div>
-    );
-
-};
-
-export default Home;
+            <SkillsGrid /> 
+            </Section>
+            
+        </main>
+    )
+}

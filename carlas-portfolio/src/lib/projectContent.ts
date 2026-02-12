@@ -36,6 +36,7 @@ export async function getAllProjects(): Promise<Project[]> {
         public: boolean
         article?: string
         cover?: string
+        domain?: string
       }>(raw)
         // const { data, content } = matter(raw);
         // console.log("Data", parsed)
@@ -54,6 +55,7 @@ export async function getAllProjects(): Promise<Project[]> {
             public:parsed.attributes.public,
             article:parsed.attributes.article,
             cover:parsed.attributes.cover,
+            domain:parsed.attributes.domain,
 
 
         } satisfies Project
@@ -92,6 +94,7 @@ export async function getProject(slug: string): Promise<Project | null> {
         article?: string
         public: boolean
         cover?: string
+        domain?: string
       }>(raw)
 //   const { data, content } = matter(raw)
 
@@ -107,18 +110,19 @@ export async function getProject(slug: string): Promise<Project | null> {
     repo: parsed.attributes.repo,
     public: parsed.attributes.public,
     article: parsed.attributes.article,
-    cover: parsed.attributes.cover
+    cover: parsed.attributes.cover,
+    domain: parsed.attributes.domain
   }
 }
 
 
-export async function getProjectMarkdown(slug: string) : Promise<string | null> {
-    const path = `/src/content/projects/${slug}.md`;
-    const loader = modules[path];
-    // console.log("pahts", path)
+// export async function getProjectMarkdown(slug: string) : Promise<string | null> {
+//     const path = `/src/content/projects/${slug}.md`;
+//     const loader = modules[path];
+//     // console.log("pahts", path)
 
-    if (!loader) return null;
+//     if (!loader) return null;
 
-    return (await loader()) as string;
+//     return (await loader()) as string;
     
-}
+// }
