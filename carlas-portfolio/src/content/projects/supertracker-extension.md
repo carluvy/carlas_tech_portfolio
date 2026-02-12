@@ -11,8 +11,13 @@ tags:
 content: "..."
 featured: "yes"
 screenshots:
-- "/projects/supertracker-extension/session_expired.png"
+
 - "/projects/supertracker-extension/authentication_screen.png"
+- "/projects/supertracker-extension/logged_in.png"
+- "/projects/supertracker-extension/tracking.png"
+- "/projects/supertracker-extension/tracking_end.png"
+- "/projects/supertracker-extension/tracking_summary.png"
+- "/projects/supertracker-extension/session_expired.png"
 public: true
 domain: "https://super-time-tracker.vercel.app/api/docs/"
 cover: "/projects/supertracker-extension/auth_2.png"
