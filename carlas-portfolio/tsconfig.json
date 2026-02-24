@@ -9,6 +9,7 @@
     "paths": {
       "@/*": ["*"]
     },
+    "lib": ["dom", "dom.iterable", "esnext", "es2024"],
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,

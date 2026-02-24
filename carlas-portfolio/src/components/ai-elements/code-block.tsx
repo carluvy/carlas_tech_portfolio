@@ -65,7 +65,7 @@ const addKeysToTokens = (lines: ThemedToken[][]): KeyedLine[] =>
 // Token rendering component
 const TokenSpan = ({ token }: { token: ThemedToken }) => (
   <span
-    className="dark:!bg-[var(--shiki-dark-bg)] dark:!text-[var(--shiki-dark)]"
+    className="dark:bg-(--shiki-dark-bg)! dark:text-(--shiki-dark)!"
     style={
       {
         backgroundColor: token.bgColor,
@@ -522,7 +522,7 @@ export const CodeBlockLanguageSelectorTrigger = ({
       "h-7 border-none bg-transparent px-2 text-xs shadow-none",
       className
     )}
-    size="sm"
+    // size="sm"
     {...props}
   />
 );
