@@ -7,17 +7,26 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
   globalIgnores(['dist']),
+
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+
   {
     files: ['**/*.{ts,tsx}'],
-    extends: [
-      js.configs.recommended,
-      tseslint.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
-    ],
+    
     languageOptions: {
       ecmaVersion: 2020,
+      sourceType: 'module',
       globals: globals.browser,
+    },
+    plugins: {
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      ...reactRefresh.configs.vite.rules,
     },
   },
 ])
+

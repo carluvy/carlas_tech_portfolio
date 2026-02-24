@@ -13,8 +13,8 @@ import {
     PromptInputTextarea,
     PromptInputSubmit
 } from "@/components/ai-elements/prompt-input";
-import { useServerHealth } from "@/hooks/useServerHealth";
-import { WELCOME_MESSAGE, type AIMessage } from "@/types";
+// import { useServerHealth } from "@/hooks/useServerHealth";
+import { WELCOME_MESSAGE } from "@/types";
 
 
 
@@ -60,8 +60,8 @@ export default function Chat() {
     const [welcomeClicked, setWelcomeClicked] = useState(false)
 
     // Prepend welcome message only if no other messages yet
-    const displayedMessages =
-        messages.length === 0 && !welcomeClicked ? [WELCOME_MESSAGE] : messages
+    // const displayedMessages =
+    //     messages.length === 0 && !welcomeClicked ? [WELCOME_MESSAGE] : messages
 
     const handleSuggestionClick = (text: string) => {
         sendMessage({ text })

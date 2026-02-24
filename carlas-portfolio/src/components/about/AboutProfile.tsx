@@ -17,7 +17,7 @@ export function AboutProfile() {
           {/* Image frame */}
           <div className="relative rounded-2xl border bg-card p-2 shadow-xl glow">
             <img
-              src="/profile/profile.jpeg" // replace when ready
+              src="/profile/profile.jpeg"
               alt="Carla Aluvai"
               className="h-90 w-90 object-cover rounded-2xl
                          transition-transform duration-500
