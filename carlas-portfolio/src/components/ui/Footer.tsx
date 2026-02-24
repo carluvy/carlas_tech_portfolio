@@ -7,13 +7,13 @@ export function Footer() {
         </p>
        
         <div className="flex justify-center gap-6 text-sm">
-          <a href="https://github.com/username" target="_blank" className="hover:text-primary transition">
+          <a href="https://github.com/carluvy" target="_blank" className="hover:text-primary transition">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/username" target="_blank" className="hover:text-primary transition">
+          <a href="https://www.linkedin.com/in/carla-aluvai/" target="_blank" className="hover:text-primary transition">
             LinkedIn
           </a>
-          <a href="mailto:email@example.com" className="hover:text-primary transition">
+          <a href="aluvaicarla@gmail.com" className="hover:text-primary transition">
             Email
           </a>
         </div>
