@@ -15,7 +15,7 @@ export default defineConfig([
     files: ['**/*.{ts,tsx}'],
     
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 2023,
       sourceType: 'module',
       globals: globals.browser,
     },
