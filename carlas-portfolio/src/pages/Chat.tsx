@@ -23,7 +23,7 @@ export default function Chat() {
     const [input, setInput] = useState('');
     const { messages, sendMessage, status } = useChat({
         transport: new TextStreamChatTransport({
-            api: "http://127.0.0.1:8000/api/chat",
+            api: "https://sleek-ai-ashy.vercel.app/api/chat",
 
         }),
 
