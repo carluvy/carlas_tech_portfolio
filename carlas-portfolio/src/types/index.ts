@@ -33,9 +33,6 @@ export const WELCOME_MESSAGE = {
 You can ask me about Carla's:
 • Projects and architecture
 • Design decisions
-• How to work with me
-• And what she's currently working on
-
 
 What would you like to do?`.trim(),
       type: "text" as "text",
