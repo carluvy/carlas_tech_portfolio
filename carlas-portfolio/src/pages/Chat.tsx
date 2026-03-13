@@ -14,7 +14,7 @@ import {
     PromptInputSubmit
 } from "@/components/ai-elements/prompt-input";
 // import { useServerHealth } from "@/hooks/useServerHealth";
-import { WELCOME_MESSAGE } from "@/types";
+// import { WELCOME_MESSAGE } from "@/types";
 
 
 
