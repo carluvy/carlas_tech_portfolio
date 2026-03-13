@@ -112,10 +112,10 @@ export default function Chat() {
                             <ConversationContent>
                                 {messages.length === 0 ? (
                                     <ConversationEmptyState
-                                        title={WELCOME_MESSAGE.parts[0].text.split("\n")[0]} // "Hi 👋 — I’m Carla's portfolio assistant."
-                                        description={WELCOME_MESSAGE.parts[0].text.split("\n").slice(1).join("\n")} // "What
-                                    // title="Hi 👋 — I’m Carla's portfolio assistant."
-                                    // description="What would you like to know?"
+//                                         title={WELCOME_MESSAGE.parts[0].text.split("\n")[0]} // "Hi 👋 — I’m Carla's portfolio assistant."
+//                                         description={WELCOME_MESSAGE.parts[0].text.split("\n").slice(1).join("\n")} // "What
+                                    title="Hi 👋 — I’m Carla's portfolio assistant."
+                                    description="What would you like to know?"
                                     />
                                 ) : (
                                     messages.map((message) => (
