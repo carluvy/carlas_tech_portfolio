@@ -6,10 +6,21 @@ import tsconfigPaths from "vite-tsconfig-paths"
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://sleek-ai-ashy.vercel.app/api/chat",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+
+  },
   plugins: [
     react(),
     tsconfigPaths(),
     tailwindcss(),
+   
 
     // {
     //   name: 'markdown-loader',

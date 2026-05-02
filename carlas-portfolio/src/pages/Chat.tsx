@@ -24,13 +24,17 @@ export default function Chat() {
     const { messages, sendMessage, status } = useChat({
         transport: new TextStreamChatTransport({
             api: "https://sleek-ai-ashy.vercel.app/api/chat",
+//             api: "http://127.0.0.1:8000/api/chat",
+         
 
         }),
+        
 
 
 
 
     });
+
     const isLoading = status === "streaming" || status === "submitted";
     // const isServerDown = isError || !health;
     const [open, setOpen] = useState(false)
@@ -52,8 +56,8 @@ export default function Chat() {
     const SUGGESTIONS = [
         // "Show me your AI projects",
         "What tech stack does Carla use?",
-        "Show me a fullstack project",
-        "Tell me about data projects",
+        "Show me Carla's fullstack project",
+        "Tell me about Carla's data projects",
 
     ]
     // Track whether user has interacted
@@ -71,7 +75,8 @@ export default function Chat() {
 
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        <div className="fixed bottom-4 right-4 left-4 sm:left-auto z-50 flex flex-col items-end">
+       {/* <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end"> */}
             {/* Connection Overlay */}
             {/* {isServerDown && (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-sm">
@@ -91,8 +96,9 @@ export default function Chat() {
             </button>
 
             {open && (
+                <div className="mt-2 w-[calc(100vw-2rem)] sm:w-[380px] md:w-[420px] h-[70vh] sm:h-[500px] flex flex-col border border-border rounded-3xl shadow-2xl bg-background overflow-hidden">
 
-                <div className="mt-2 w-100 max-w-full h-100 md:h-125 flex flex-col border border-border rounded-3xl shadow-2xl bg-background overflow-hidden">
+                {/* <div className="mt-2 max-w-full md:h-125 flex flex-col border border-border rounded-3xl shadow-2xl bg-background overflow-hidden w-[calc(100vw-2rem)] sm:w-[380px] md:w-[420px] h-[70vh] sm:h-[500px]"> */}
                     <div className="px-4 py-2 border-b border-border bg-background/90 backdrop-blur-sm flex justify-between items-center sticky top-0 z-10">
                         <span className="font-semibold text-primary">Carla's Assistant</span>
                         <button

@@ -41,7 +41,8 @@ export function Header() {
                 {/* <ThemeToggle /> */}
                 <NavItem to="/">Home</NavItem>
                 <NavItem to="/projects">Projects</NavItem>
-                <NavItem to="/contact">Contact</NavItem>
+                {/*<NavItem to="/contact">Contact</NavItem> */}
+                {/* <NavItem to="/chat" >Chat</NavItem> */}
           {/* {[
             { to: "/about", label: "About" },
             { to: "/projects", label: "Projects" },

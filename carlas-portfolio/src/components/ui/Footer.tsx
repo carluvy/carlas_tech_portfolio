@@ -13,9 +13,6 @@ export function Footer() {
           <a href="https://www.linkedin.com/in/carla-aluvai/" target="_blank" className="hover:text-primary transition">
             LinkedIn
           </a>
-          <a href="aluvaicarla@gmail.com" className="hover:text-primary transition">
-            Email
-          </a>
         </div>
          <p>&copy; {new Date().getFullYear()} Carla Portfolio. All rights reserved.</p>
       </div>

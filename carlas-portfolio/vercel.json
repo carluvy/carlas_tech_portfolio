@@ -20,5 +20,12 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
+  ],
+  "crons": [
+    {
+      "path": "/health/",
+      "schedule": "0 5 * * *"
+
+    }
   ]
 }
